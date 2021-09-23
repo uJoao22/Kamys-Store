@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:20px;
+    font-family:Roboto, sans-serif;
+    box-sizing:border-box;
+}
+
+.navbar {
+    height: 5em;
+    box-shadow: 5px 0 20px -1px rgb(163, 116, 194);
+    z-index: 10;
+}
+
+#formPesquisa{
+    height: 1.67em;
+    min-width: 68%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+    padding: 0.07em 0.5em;
+}
+
+#lupa {
+    background-color: transparent;
+    border: 0;
+    padding: 0 8px 0 12px;
+    margin-left: -12px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+#pesquisa {
+    border: 0;
+    outline: none;
+    font-size: 65%;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.divLogo {
+    height: 5em;
+}
+
+.divLogo a {
+    width: 40%;
+}
+
+.logo {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    object-position: top center;
+}
+
+#menuMobile {
+    display: none;
+}
+
+/* Menu Drop Lateral */
+.menuBarra, .bi-basket, .bi-person-circle, .bi-search{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menuBarra:hover, .bi-basket:hover, .bi-person-circle:hover, .bi-search:hover {
+    transform: scale(1.1);
+}
+
+.botaoLogin {
+    border: 0px;
+    background: 0;
+    outline: none;
+}
+
+.formLogin input{
+    font-size: 13px;
+}
+
+.formLogin input:focus{
+    box-shadow: 0px 0px 5px 1px rgb(163, 116, 194, 0.5);
+    border: 1px solid rgb(163, 116, 194, 0.5);
+}
+
+.logar {
+    border: 1px solid rgb(163, 116, 194);
+    color: rgb(163, 116, 194);
+}
+
+.logar:hover {
+    background-color: rgb(163, 116, 194);
+    color: white;
+}
+
+.cadastro {
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+    transition: 0.2s;
+}
+
+.cadastro:hover {
+    font-size: 14px;
+    color: rgb(0, 89, 255);
+}
+
+.dropLateral {
+    display: none;
+    width: 0%;
+    z-index: 20;
+    border-right: 0.13em solid rgba(163, 116, 194, 0.4);
+}
+
+.xClose {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.xClose:hover {
+    transform: scale(1.1);
+}
+
+.category {
+    height: 85%;
+}
+
+.category ul {
+    margin: 0;
+    padding: 0;
+}
+
+.category ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.2s;
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+
+.category ul li:nth-child(1) {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.category ul li:hover {
+    transform: scale(1.1);
+}
+
+
+/* MEDIA - Movile */
+@media (max-width: 800px) {
+    #menuDesktop {
+        display: none;
+    }
+
+    #menuMobile {
+        display: block;
+        height: auto;
+        z-index: 1;
+    }
+
+    .divLogo {
+        height: 3em;
+    }
+
+    .dados a {
+        text-decoration: none;
+    }
+
+    #formPesquisa {
+        margin: 5px 0 5px 0;
+    }
+}

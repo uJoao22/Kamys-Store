@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:16px;
+    font-family:Roboto, sans-serif;
+    box-sizing:border-box;
+}
+
+main{
+    padding-top: 6em;
+}
+
+.navbar {
+    height: 5em;
+    box-shadow: 5px 0 20px -1px rgb(163, 116, 194);
+    z-index: 10;
+}
+
+.divLogo {
+    height: 5em;
+}
+
+.divLogo a {
+    width: 25%;
+}
+
+.logo {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    object-position: top center;
+}
+
+.name-label {
+    position: relative;
+}
+
+.name-label > .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0px 0px 5px 1px rgba(163, 116, 194, 0.5);
+    border: 1px solid rgba(163, 116, 194, 0.5);
+}
+
+.mostrar, .criar {
+    border: 1px solid rgb(163, 116, 194);
+    color: rgb(163, 116, 194);
+    font-size: 14px;
+}
+
+.mostrar:hover, .criar:hover{
+    background-color: rgb(163, 116, 194);
+    border: 1px solid rgb(163, 116, 194);
+    color: white;
+}
+
+.mostrar:focus {
+    box-shadow: 0px 0px 0px white;
+}
+
+.criar {
+    font-size: 20px;
+}
+
+.criar:active {
+    box-shadow: none;
+}
+
+@media (max-width: 800px) {
+    .divLogo a{
+        width: 35%;
+    }
+}
+
+@media (max-width: 576px) {
+    .divLogo a{
+        width: 45%;
+    }
+}
+
+@media (max-width: 460px) {
+    .divLogo a{
+        width: 60%;
+    }
+}
+
+@media (max-width: 360px) {
+    .divLogo a{
+        width: 80%;
+    }
+}

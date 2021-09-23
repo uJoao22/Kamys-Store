@@ -1,0 +1,109 @@
+main {
+    padding-top: 6em;
+}
+
+.listDados {
+    margin: 0;
+    padding: 0;
+}
+
+.listDados li {
+    list-style: none;
+}
+
+.nomeMobile {
+    display: none;
+}
+
+.imagem {
+    width: 30%;
+}
+
+.infoProdutos {
+    width: 43%;
+}
+
+.cores {
+    border: 1px solid #e2e8f0;
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.divCor {
+    width: 1.6em;
+    height: 1.6em;
+    border: 1px solid #e2e8f0;;
+}
+
+.tamanho, .quantidade{
+    border:0;
+    border-bottom: 1px solid gray;
+    border-radius: 0px;
+}
+
+.tamanho:focus, .quantidade:focus {
+    box-shadow: 0px 0px 5px 1px rgba(163, 116, 194, 0.5);
+    border: 0px;
+}
+
+label {
+    font-size: 15px;
+}
+
+.adc {
+    background-color: rgb(163, 116, 194);
+    border: rgb(163, 116, 194);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+.adc:hover {
+    background-color: rgb(163, 116, 194);
+    border: rgb(163, 116, 194);
+    color: white;
+    text-decoration: underline;
+    transform: scale(1.01);
+}
+
+@media (max-width:992px) {
+    .imagem {
+        width: 40%;
+    }
+}
+
+@media (max-width:800px) {
+    main {
+        padding-top: 8.5em;
+    }
+}
+
+@media (max-width:768px) {
+    .infoProdutos {
+        width: 53%;
+    }
+    .imagem {
+        width: 43%;
+    }
+}
+
+@media (max-width:520px) {
+    .listDados {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nomeMobile {
+        display: block;
+    }
+    .nomeDesktop {
+        display: none;
+    }
+    .infoProdutos {
+        width: 90%;
+        margin-top: 3%;
+    }
+    .imagem {
+        width: 75%;
+    }
+}

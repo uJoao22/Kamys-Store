@@ -1,0 +1,57 @@
+main {
+    padding-top: 5em;
+}
+
+.titulo {
+    width: 90%;
+}
+
+.divProdutos {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.infoProdutos{
+    transition: 0.3s ease-out;
+    z-index: 0;
+}
+
+.infoProdutos:hover {
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+.infoProdutos li{
+    list-style: none;
+}
+
+.infoProdutos li a {
+    text-decoration: none;
+    color: black;
+}
+
+.informacoes li {
+    text-align: center;
+    font-size: 18px;
+}
+
+.linkTexto {
+    text-decoration: none;
+    color: black;
+}
+
+.linkTexto:hover {
+    color: rgb(163, 116, 194);
+}
+
+.copy {
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 800px) { 
+    main {
+        padding-top: 7em;
+    }
+}

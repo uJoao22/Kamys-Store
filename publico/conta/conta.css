@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:20px;
+    font-family:Roboto, sans-serif;
+    box-sizing:border-box;
+}
+
+#menuDesktop {
+    box-shadow: 0px 0px 20px -1px rgb(163, 116, 194);
+    width: 22%;
+    display: flex;
+    z-index: 10;
+}
+
+#menuMobile{
+    display: none;
+}
+
+.list-Mobile{
+    display: none;
+}
+
+.list-group li {
+    background-color: rgba(163, 116, 194,0.8);
+    border-radius: 10px;
+}
+
+.list-group li:hover {
+    background-color: rgb(163, 116, 194);
+}
+
+.list-group li a {
+    font-size: 18px;
+}
+
+.list-group li a:hover {
+    font-weight: bold;
+}
+
+.list-group li a.sair {
+    background-color: rgba(211, 37, 37,0.8);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.list-group li a.sair:hover{
+    background-color: red;
+    text-decoration: underline;
+}
+
+.container {
+    margin-left: 22%;
+    z-index: 0;
+}
+
+.aLogo{
+    width: 30%;
+}
+
+.titulo{
+    background-color: rgb(163, 116, 194);
+    box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.5);
+}
+
+input, select {
+    outline: none;
+    border: 3px solid #CED4DA;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+select{
+    touch-action: none; 
+    pointer-events: none;
+    appearance: none;
+    background: transparent url("../images/outras/chevron-down.svg") 95.5% 50% no-repeat;
+}
+
+.bi-pencil-fill{
+    display: block;
+    cursor: pointer;
+}
+
+.bi-pencil-fill:hover{
+    transform: scale(1.2);
+}
+
+.bi-x-lg{
+    display: none;
+    cursor: pointer;
+}
+
+.bi-x-lg:hover{
+    transform: scale(1.2);
+}
+
+.save {
+    border: 1px solid rgb(163, 116, 194);
+    color: rgb(163, 116, 194);
+    display: none;
+}
+
+.save:hover {
+    border: 1px solid rgb(163, 116, 194);
+    background-color: rgb(163, 116, 194);
+    color: white;
+}
+
+@media (max-width: 1092px){
+    #menuDesktop{
+        width: 28%;
+    }
+}
+
+@media (max-width: 859px){
+    #menuDesktop{
+        width: 32%;
+    }
+    h2{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 767px){
+    #menuDesktop{
+        display: none;
+    }
+    #menuMobile{
+        display: flex;
+        align-items: center;
+        z-index: 10;
+        height: 4em;
+        box-shadow: 0px 0px 20px -1px rgb(163, 116, 194);
+    }
+    .container{
+        margin-left: auto;
+        padding-top: 5em;
+    }
+    .list-Mobile{
+        display: block;
+        list-style: none;
+        position: fixed;
+        padding: 4.5em 0 1em 0;
+        border-radius: 0px;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .list-Mobile li a{
+        font-size: 15px;
+    }
+    .bi-list{
+        cursor: pointer;
+    }
+    .bi-list:hover{
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 630px){
+    .aLogo{
+        width: 35%;
+    }
+}
+
+@media (max-width: 480px){
+    .aLogo{
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 400px){
+    .aLogo{
+        width: 50%;
+    }
+}
