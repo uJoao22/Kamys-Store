@@ -11,3 +11,8 @@ Final project of my TCC for the technical course in informatics, still under dev
 - Ajax
 - PHP
 - MySQL
+
+</br>
+<h2>Files:</h2>
+In the folder "conexao" is found the PHP code of connection with Kamys database. </br>
+In the "publico" folder is where all the application codes are, the product page, user page, listing page, in short, all the code.
